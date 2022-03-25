@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -55,8 +56,12 @@ nav{
 }
 
 
-@media screen and (max-width:768px) {
+body, html{
+    overflow-x: hidden;
+    position: relative;
+}
 
+@media screen and (max-width:768px) {
     
 
     .nav-links{
@@ -69,7 +74,7 @@ nav{
         flex-direction: column;
         align-items: center;
         transform: translateX(100%);
-        display: none;
+        transition: all 0.5s ease-out;
 
         li{
             opacity: 0;
@@ -81,6 +86,9 @@ nav{
         cursor: pointer;
     }
 
+    .nav-active{
+        transform: translateX(0%);
+    }
 
     
 }
