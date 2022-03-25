@@ -68,6 +68,12 @@ body, html{
     position: relative;
 }
 
+body{
+    background: url('./img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 
 .toggle{
     .line1{
@@ -126,6 +132,9 @@ body, html{
     }
 
 
+    body{
+        background-size: cover;
+    }
 
     
 }
