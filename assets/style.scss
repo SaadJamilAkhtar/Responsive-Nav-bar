@@ -61,6 +61,19 @@ body, html{
     position: relative;
 }
 
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
 @media screen and (max-width:768px) {
     
 
@@ -90,8 +103,12 @@ body, html{
         transform: translateX(0%);
     }
 
+
+
     
 }
+
+
 
 @media screen and (max-width:1024px) {
     .nav-links{
