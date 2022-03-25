@@ -40,3 +40,54 @@ nav{
         list-style: none;
     }
 }
+
+.burger{
+
+    display: none;
+
+    div{
+        width: 25px;
+        height: 3px;
+        background-color: rgb(235, 222, 222);
+        margin: 5px;
+
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    
+
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top: 10vh;
+        background-color: #5d4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        display: none;
+
+        li{
+            opacity: 0;
+        }
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+
+    
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links{
+        width: 50%;
+    }
+    
+}
